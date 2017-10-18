@@ -1,0 +1,11 @@
+{
+    "fileExtensions": [".less", ".css"],
+    "zeroUnit": false,
+    "hexLength": false,
+    "idSelector": false,
+    "finalNewline": false,
+    "urlQuotes": false,
+    "maxCharPerLine": false,
+    "qualifyingElement": false,
+    "propertyOrdering": false
+}

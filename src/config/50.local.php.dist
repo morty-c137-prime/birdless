@@ -1,0 +1,53 @@
+<?php
+/**
+ * @author Xunnamius <me@xunn.io>
+ */
+
+/**
+ * Usage:
+ *
+ * This is a dist file and, as such, should **remain unmodified**. To get your
+ * database working, do the following:
+ *
+ * 1. Duplicate this file
+ * 2. Go to the duplicate. You'll make changes on that file exclusively.
+ * 3. Remove the .dist extension from this file
+ * 4. Uncomment any relevant sections below. If you're not on prod (you're
+ * probably not if you're reading this) then you should delete the entire
+ * production db settings section. You won't need it.
+ *
+ * The test DB is used to run the DB portions of the unit tests. The develop DB
+ * is what your local version of the application will use to fetch and store
+ * data. See `docs/dbschema.sql` to set up a proper DB for this application.
+ *
+ * What you'll find below are the PDO settings for connecting with the databases
+ * this application uses. You should make sure they are to your liking before
+ * expecting them to work in your application!
+ */
+
+//////////////////////
+// Test DB Settings //
+//////////////////////
+
+// const DB_TEST_DSN    = 'mysql:host=localhost;dbname=bdpa_hscc_test;charset=utf8mb4';
+// const DB_TEST_USER   = 'test db username here';
+// const DB_TEST_PASSWD = 'test db password here';
+// const DB_TEST_DBNAME = 'bdpa_hscc_test';
+
+/////////////////////////
+// Develop DB Settings //
+/////////////////////////
+
+// const DB_DEVELOP_DSN    = 'mysql:host=localhost;dbname=bdpa_hscc_dev;charset=utf8mb4';
+// const DB_DEVELOP_USER   = 'dev db username here';
+// const DB_DEVELOP_PASSWD = 'dev db password here';
+// const DB_DEVELOP_DBNAME = 'bdpa_hscc_dev';
+
+////////////////////////////
+// Production DB Settings //
+////////////////////////////
+
+// const DB_DEVELOP_DSN    = 'mysql:host=localhost;dbname=bdpa_hscc_dev;charset=utf8mb4';
+// const DB_DEVELOP_USER   = 'prod db password here';
+// const DB_DEVELOP_PASSWD = 'prod db password here';
+// const DB_DEVELOP_DBNAME = 'bdpa_hscc_dev';

@@ -1,0 +1,300 @@
+<?xml version="1.0" ?>
+<dataset>
+    <table name="states">
+        <column>state_id</column>
+        <column>name</column>
+        <row>
+            <value>1</value>
+            <value>Illinois</value>
+        </row>
+        <row>
+            <value>2</value>
+            <value>Georgia</value>
+        </row>
+    </table>
+    <table name="account_statuses">
+        <column>account_status_id</column>
+        <column>name</column>
+        <column>description</column>
+        <row>
+            <value>1</value>
+            <value>active</value>
+            <value>Account is in normal standing.</value>
+        </row>
+        <row>
+            <value>2</value>
+            <value>banned</value>
+            <value>The account is unable to be utilized by the direcctive of an administrator.</value>
+        </row>
+        <row>
+            <value>3</value>
+            <value>email-verify</value>
+            <value>The acccount cannot be utilized until the registered email is verified.</value>
+        </row>
+        <row>
+            <value>4</value>
+            <value>admin-verify</value>
+            <value>The account cannot be utilized until an administrator reviews the registration information.</value>
+        </row>
+        <row>
+            <value>5</value>
+            <value>locked</value>
+            <value>The account cannot be utilized due to too many login attempts.</value>
+        </row>
+        <row>
+            <value>6</value>
+            <value>inactive</value>
+            <value>The account has been deleted (deactivated) by the user.</value>
+        </row>
+    </table>
+    <table name="files">
+        <column>file_id</column>
+        <column>name</column>
+        <column>ext</column>
+        <column>uri</column>
+        <column>is_remote</column>
+        <column>creation_ts</column>
+        <row>
+            <value>1</value>
+            <value>file1</value>
+            <value>txt</value>
+            <value>/no/paths/here/file1.txt</value>
+            <value>0</value>
+            <value>2017-01-28 23:03:24</value>
+        </row>
+        <row>
+            <value>2</value>
+            <value>file2</value>
+            <value>txt</value>
+            <value>/no/paths/here/file2.txt</value>
+            <value>0</value>
+            <value>2017-09-15 20:13:21</value>
+        </row>
+    </table>
+    <table name="users">
+        <column>user_id</column>
+        <column>username</column>
+        <column>passwd</column><!-- first 64 chars from sha512($username$hash_salt) -->
+        <column>hash_salt</column>
+        <column>reset_key</column>
+        <column>sess_id</column>
+        <column>registration_ts</column>
+        <column>last_login_ts</column>
+        <column>last_action_ts</column>
+        <column>last_login_ip</column>
+        <column>account_status_id</column>
+        <column>first_name</column>
+        <column>last_name</column>
+        <column>email</column>
+        <column>address</column>
+        <column>address2</column>
+        <column>city</column>
+        <column>state_id</column>
+        <column>primary_phone</column>
+        <column>birthdate</column>
+        <column>profile_pic_file_id</column>
+        <row>
+            <value>1</value>
+            <value>test_user_1</value>
+            <value>0xb949eb5a109b74977bbb01f42e09ad0398b9529d2b3b90f1cdcad4f223533def3d4c0ffdde957bcce7f27564ef2605aa797d6afaea1cabe0b1163af8cecade1c</value>
+            <value>0x47c3737cb5196a41e68c132a2ee183afb4b364005ea7af1eedb6f79d54202b9c3b9d031fa167a53ea270bae08fe9a99edc78fa76a8cfac940c9c3663c11f1295</value>
+            <value>0xf99d4a95cb4b23f667289925f6bfaf6f9ea19bcdf3745bb65ddc2b0ea6431d42f13b2f5f8ccf50d4e219c948613fd7af98b2cdea4891563b8affc75da395ce3a</value>
+            <value>b3e724f8c84d3bb6bb7b973dbf0</value>
+            <value>2017-01-28 23:03:24</value>
+            <value>2017-01-28 23:03:24</value>
+            <value>2017-01-28 23:03:24</value>
+            <value>192.168.115.1</value>
+            <value>1</value>
+            <value>Tre</value>
+            <value>Giles</value>
+            <value>faker1@fake.fake</value>
+            <value>1234 N. Fake Street</value>
+            <null />
+            <value>Chicago</value>
+            <value>1</value>
+            <value>5555555555</value>
+            <value>1992-09-26</value>
+            <value>1</value>
+        </row>
+        <row>
+            <value>2</value>
+            <value>test_user_2</value>
+            <value>0x717874a3e4685ff3c9c4ac3f3355ad964ca556525fbbf295b1d9ebe53fda43ab8b14bec1544eea679e23d0fb48f703bced45db1e12334c0fdb6b26cea3f276a0</value>
+            <value>0x47c3737cb5196a41e68c132a2ee183afb4b364005ea7af1eedb6f79d54202b9c3b9d031fa167a53ea270bae08fe9a99edc78fa76a8cfac940c9c3663c11f1295</value>
+            <value>0x2f5f8ccf50d4e219c948613fd7af98b2cdea4891563b8affc75da395ce3abf99d4a95cb4b23f667289925f6bfaf6f9ea19bcdf3745bb65ddc2b0ea6431d42f13</value>
+            <value>84d3bb3e77b973d8cbf0b24fb6b</value>
+            <value>2017-01-28 23:03:24</value>
+            <value>2017-01-28 23:03:24</value>
+            <value>2017-01-28 23:03:24</value>
+            <value>192.168.115.1</value>
+            <value>2</value>
+            <value>Trevor</value>
+            <value>Miles</value>
+            <value>faker2@fake.com</value>
+            <value>1213 N. Fake Street</value>
+            <null />
+            <value>Chicago</value>
+            <value>2</value>
+            <value>5555555555</value>
+            <value>1992-09-26</value>
+            <value>2</value>
+        </row>
+        <row>
+            <value>3</value>
+            <value>test_user_3</value>
+            <value>0x717874a3e4685ff3c9c4ac3f3355ad964ca556525fbbf295b1d9ebe53fda43ab8b14bec1544eea679e23d0fb48f703bced45db1e12334c0fdb6b26cea3f276a0</value>
+            <value>0x47c3737cb5196a41e68c132a2ee183afb4b364005ea7af1eedb6f79d54202b9c3b9d031fa167a53ea270bae08fe9a99edc78fa76a8cfac940c9c3663c11f1295</value>
+            <value>0xf6f9ea198ccf50d4e2e3abf99d4a95cd7af98b219c948613faffc75da395ccdea4891563b8b4b23f667289925f6bfa2f5fbcdf3745bb65ddc2b0ea6431d42f13</value>
+            <value>84d3bb3e77b973d8cbf0b24fb6b</value>
+            <value>2017-01-28 23:03:24</value>
+            <value>2017-01-28 23:03:24</value>
+            <value>2017-01-28 23:03:24</value>
+            <value>192.168.115.1</value>
+            <value>3</value>
+            <value>Lever</value>
+            <value>Tiles</value>
+            <value>faker3@fake.com</value>
+            <value>2234 N. Fake Street</value>
+            <null />
+            <value>Chicago</value>
+            <value>2</value>
+            <value>5555555555</value>
+            <value>1992-09-26</value>
+            <value>1</value>
+        </row>
+        <row>
+            <value>4</value>
+            <value>test_user_4</value>
+            <value>0x717874a3e4685ff3c9c4ac3f3355ad964ca556525fbbf295b1d9ebe53fda43ab8b14bec1544eea679e23d0fb48f703bced45db1e12334c0fdb6b26cea3f276a0</value>
+            <value>0x47c3737cb5196a41e68c132a2ee183afb4b364005ea7af1eedb6f79d54202b9c3b9d031fa167a53ea270bae08fe9a99edc78fa76a8cfac940c9c3663c11f1295</value>
+            <value>0x63b8af50d4e219ea6431d42f17af98b2cdea489152f5f8ccffc75c948613fd95cb4b23f667289925da395ce3abf99d4abcdf3745bb65ddc2b0f6bfaf6f9ea193</value>
+            <value>84d3bb3e77b973d8cbf0b24fb6b</value>
+            <value>2017-01-28 23:03:24</value>
+            <value>2017-01-28 23:03:24</value>
+            <value>2017-01-28 23:03:24</value>
+            <value>192.168.115.1</value>
+            <value>4</value>
+            <value>Gever</value>
+            <value>Ailes</value>
+            <value>faker4@fake.com</value>
+            <value>1224 N. Fake Street</value>
+            <null />
+            <value>Chicago</value>
+            <value>1</value>
+            <value>5555555555</value>
+            <value>1992-09-26</value>
+            <value>2</value>
+        </row>
+    </table>
+    <table name="acl_permissions">
+        <column>acl_permission_id</column>
+        <column>name</column>
+        <column>description</column>
+        <row>
+            <value>1</value>
+            <value>perm1</value>
+            <value>Permission 1</value>
+        </row>
+        <row>
+            <value>2</value>
+            <value>perm2</value>
+            <value>Permission 2</value>
+            <null />
+        </row>
+        <row>
+            <value>3</value>
+            <value>perm3</value>
+            <value>Permission 3.</value>
+        </row>
+    </table>
+    <table name="acl_entity_groups">
+        <column>acl_entity_group_id</column>
+        <column>name</column>
+        <column>description</column>
+        <row>
+            <value>1</value>
+            <value>perm1</value>
+            <value>Permission 1</value>
+        </row>
+        <row>
+            <value>2</value>
+            <value>perm2</value>
+            <value>Permission 2</value>
+            <null />
+        </row>
+        <row>
+            <value>3</value>
+            <value>perm3</value>
+            <value>Permission 3.</value>
+        </row>
+    </table>
+    <table name="acl_list">
+        <column>acl_list_id</column>
+        <column>user_id</column>
+        <column>acl_entity_group_id</column>
+        <column>supervised_object</column>
+        <row>
+            <value>1</value>
+            <value>1</value>
+            <value>2</value>
+            <value>1</value>
+            <value>1</value>
+        </row>
+        <row>
+            <value>2</value>
+            <value>1</value>
+            <value>3</value>
+            <value>2</value>
+            <value>0</value>
+        </row>
+        <row>
+            <value>3</value>
+            <value>3</value>
+            <value>1</value>
+            <value>3</value>
+            <value>1</value>
+        </row>
+        <row>
+            <value>4</value>
+            <value>2</value>
+            <value>4</value>
+            <value>3</value>
+            <value>0</value>
+        </row>
+    </table>
+    <table name="acl_list_permissions">
+        <column>acl_list_id</column>
+        <column>acl_permission_id</column>
+        <column>subject_user_id</column>
+        <column>subject_entity_group_id</column>
+        <column>supervised_object</column>
+        <row>
+            <value>1</value>
+            <value>1</value>
+            <value>2</value>
+            <value>1</value>
+            <value>1</value>
+        </row>
+        <row>
+            <value>2</value>
+            <value>1</value>
+            <value>3</value>
+            <value>2</value>
+            <value>0</value>
+        </row>
+        <row>
+            <value>3</value>
+            <value>3</value>
+            <value>1</value>
+            <value>3</value>
+            <value>1</value>
+        </row>
+        <row>
+            <value>4</value>
+            <value>2</value>
+            <value>4</value>
+            <value>3</value>
+            <value>0</value>
+        </row>
+    </table>
+</dataset>
